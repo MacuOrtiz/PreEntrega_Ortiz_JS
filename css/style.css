@@ -9,9 +9,7 @@
   height: 100px 
  }
 
-/* body {
-  background:white;
-}  */
+
  .imagen-logo{
   width: 50px;
   height: 50px;
@@ -122,11 +120,6 @@ justify-content: center
 
 /*quienes somos*/
 
-/* .bodyprincipal{
-  background-image: url(../assets/img/background\ logo.jpg);
-  background-repeat: repeat ;
-  background-size: cover ;
-} */
 
 .titulos-about{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
