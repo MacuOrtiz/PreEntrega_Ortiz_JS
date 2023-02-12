@@ -31,6 +31,16 @@
   font-size: 45px;
   }
 
+  .titulo-principal {
+    font-size: calc(1.025rem + 3.3vw);
+  }
+  
+  @media (min-width: 1200px) {
+    .titulo-principal {
+      font-size: 4rem;
+    }
+  }
+
 
   .descriptio-princial{
     display: flex;
@@ -43,23 +53,33 @@
    text-align: center;
    background-position: center;
    
-    width: 770px;
+    width: 640px;
     height: 150px;
     color: black;
     font-size: 25px;
     text-align: justify;
+    margin-bottom: 15px;
     
    
   }
-  .carousel-item {
-    width: 700px;
-    height: 700px;
+  .description {
+    font-size: calc(1.525rem + 0.1vw);
   }
   
-  .d-block {
-    width: 700px;
-    height: 700px;
+  @media (min-width: 100px) {
+    .title {
+      font-size: 1rem;
+    }
   }
+  /* .carousel-item {
+    width: 500px;
+    height: 500px;
+  }
+   */
+  /* .d-block {
+    width: 500px;
+    height: 500px;
+  } */
 
   .footer-principal{
     display: flex;
@@ -91,20 +111,22 @@
 
 
 .carusel-principal{
- 
+ margin-top: 15px;
  display: flex;
-  justify-content: center
+justify-content: center
+
+
  
     
 } 
 
 /*quienes somos*/
 
-.bodyprincipal{
+/* .bodyprincipal{
   background-image: url(../assets/img/background\ logo.jpg);
   background-repeat: repeat ;
   background-size: cover ;
-}
+} */
 
 .titulos-about{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -225,20 +247,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 
 }
 .n-experiencia {
   width: 520px;
   height: 350px;
+  margin-bottom: 80px;
+  
 }
 .n-experiencia-li{
   width: 520px;
   height: 350px;
-  padding-top: 50px;
+  padding-top: 60px;
   
   
 }
+
 .lista-experiencia{
 margin-top: 25px;
  
@@ -247,9 +272,6 @@ margin-top: 25px;
 ul{
   list-style-type: none;
 
-}
-.experiencia-sectio2{
-  margin-top: 60px;
 }
 
 /*localizacio*/
