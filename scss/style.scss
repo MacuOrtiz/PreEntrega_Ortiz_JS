@@ -21,7 +21,9 @@ $texto: justify;
 *{
     @extend %confi
 }
-
+.card-experiencia{
+    text-align: $texto;
+}
  .card-quienessomos {
     text-align: $texto;
  }
