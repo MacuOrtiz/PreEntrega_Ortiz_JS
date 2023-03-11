@@ -7,6 +7,22 @@ $boton-style: bold;
 $texto: justify;
 /*extend*/
 
+/*map*/
+$estilos: (
+  margen: 5px,
+  bordes: 5px,
+  textisq: left,
+  margender: 20px,
+  negrilla: bold,
+  italico: italic
+);
+
+@mixin cardAcercaDeNosotros($ancho, $alto, $margebajo){
+  width: $ancho;
+  height: $alto;
+  margin-bottom: $margebajo;
+}
+
 %imagen-equipo {
     height: 300px;
     width: 300px;
@@ -76,7 +92,7 @@ $texto: justify;
   font-size-adjust: 80px;
   text-align: center;
   color: black;
-  font-style: italic;
+  font-style: map-get($map: $estilos, $key: italico);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
   padding: 10px;
@@ -175,19 +191,20 @@ justify-content: center
   color: black;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-style: italic;
+  font-style: map-get($map: $estilos, $key: italico);
   
   }
   .a-class{
     color: black;
   }
   
+ 
   .header-about{
-    margin: 5px;
-    padding: 5px;
-    text-align: left;
-    margin-left: 20px;
-    font-weight: bold;
+    margin: map-get($map: $estilos, $key:margen );
+    padding: map-get($map: $estilos, $key:bordes );
+    text-align: map-get($map: $estilos, $key: textisq);
+    margin-left: map-get($map: $estilos, $key: margender);
+    font-weight: map-get($map: $estilos, $key: negrilla);
   }
 
   .imagen-equipo{
@@ -245,10 +262,9 @@ justify-content: center
     align-items: center;
 } */
 
+
 .cardabout{
-  width: 280px;
-  height: 250px;
-  margin-bottom: 20px;
+ @include cardAcercaDeNosotros(280px,250px,20px );
 }
 
 .cardguia{
@@ -305,10 +321,10 @@ justify-content: center
    
 }
 .card-text {
-  text-align: justify;
+  text-align: $texto;
 }
 .mb-3 {
-  text-align: justify;
+  text-align: $texto;
 }
 
 .lista-experiencia{
