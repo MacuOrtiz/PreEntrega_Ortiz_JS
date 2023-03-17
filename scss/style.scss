@@ -16,6 +16,7 @@ $estilos: (
   negrilla: bold,
   italico: italic
 );
+ 
 
 @mixin cardAcercaDeNosotros($ancho, $alto, $margebajo){
   width: $ancho;
@@ -27,6 +28,8 @@ $estilos: (
     height: 300px;
     width: 300px;
 }
+
+
 %confi {
     margin: 0;
     padding: 0;
@@ -376,4 +379,8 @@ ul{
   100%{width: 100px;} */
   0%{ transform: rotate(0);}
   100%{ transform: rotate(360deg);}
+}
+
+.seis{
+  color: azure;
 }
