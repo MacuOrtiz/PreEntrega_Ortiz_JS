@@ -18,58 +18,44 @@ const MAYOR_EDAD = 18
 
    alert ("Puedes contratar un paquete con nosotros. Que tour te gustaria contratar?")
   let tour = prompt (" Seleciona una letra por favor: a) Volcan Cotopaxi, b) Laguna Quilotoa c) Glaciar Volcan Cayambe, d) Escuela de Glaciar del volcan Cayambe e) Iinizas Sur, f) Trekking en medias Montañas   ");
-  
+
 
      let grupo = parseInt (prompt ("Cuantas personas van al Tour")) 
      console.log ("el grupo es de "+ grupo)
      
+     function integrantesgrupo () {
+      //ciclo ingresando nombres de personas que contrataran el tour 
+      for (let i = 0; i < grupo ; i++) {
+        let t = i+1;
+        let nombre = prompt ("Ingrese el nombre del integrante " + t );
+        console.log ("intregrante " + t + " es " + nombre );
+      }
      
+    }
+
+    
      if (grupo>5) {
       const descuento = 0.80;
       let valor_total= VALOR_TOUR * grupo*0.8;
       alert ("El valor a cancelar es de $"+valor_total);
       let y =1 ;
       let grupototal= grupo + y;
-      while (y < grupototal) {
-      let nombreg = prompt ("Ingrese el nombre del integrante " + y )
-      console.log ("Integrante " + y +" es " + nombreg  )
-        1+ y++
-      }
+      integrantesgrupo ();
      }
 
      else {let valor_total= VALOR_TOUR*grupo;
       alert ("El valor a cancelar es de $"+valor_total);
-   
-      //ciclo ingresando nombres de personas que contrataran el tour 
-    let x = 1
-     let grupo_total= grupo + x
-     
-      while (x < grupo_total){
-       let nombre = prompt ("Ingrese el nombre del integrante " + x )
-       console.log ("intregrante " + x + " es " + nombre )
-       1+ x++
-      }
-    }
-  
+ 
+    integrantesgrupo ();
+ }
   }
 
- 
-
-else {
-    alert (" hmm lo siento, te recordamos que para realizar una actividad con nosotros debes ser mayor de edad")
-}
-  // paquetes
-//   const PAQUETE= {
-//     a: "a.Volcan Cotopaxi"
-//     b: "b.Laguna Quilotoa"
-//     c: "c.Glaciar Volcan Cayambe"
-//     d: "d.Escuela de Glaciar del volcan Cayambe"
-//     e: "e.Iinizas Sur"
-//     f: "f.Trekking en medias Montañas"
+//   } else {
+//     alert (" hmm lo siento, te recordamos que para realizar una actividad con nosotros debes ser mayor de edad")
 // }
 
 
 
 
 
-  
+ 
