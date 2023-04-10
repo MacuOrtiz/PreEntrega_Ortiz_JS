@@ -50,9 +50,9 @@ const MAYOR_EDAD = 18
  }
   }
 
-//   } else {
-//     alert (" hmm lo siento, te recordamos que para realizar una actividad con nosotros debes ser mayor de edad")
-// }
+   else {
+    alert (" hmm lo siento, te recordamos que para realizar una actividad con nosotros debes ser mayor de edad")
+ }
 
 
 
