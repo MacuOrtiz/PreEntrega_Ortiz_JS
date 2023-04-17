@@ -56,7 +56,7 @@ let tourEleguido = prompt(" Seleciona un numero por favor: " + tours.join(", "))
  }
 
 
-class IntegrantesTour {
+class ingresoIntegrantesGrupo {
  constructor (nombre, edad) {
  this.nombre = nombre.toUpperCase();
  this.edad = parseFloat(edad);
@@ -68,12 +68,12 @@ let respuesta = "SI";
 do {
 let nombre = prompt("Ingrese el nombre de la persona que va a al tour");
 let edad = prompt ("ingrese la edad de la personas");
- const UnIntegrante = new IntegrantesTour(nombre, edad);
+const UnIntegrante = new ingresoIntegrantesGrupo(nombre, edad);
 if (edad<18) {
 alert ("hmm lo siento, te recordamos que para realizar una actividad con nosotros debes ser mayor de edad, por favor ingresa los datos de una persona mayor de 18 años")
 let nombre = prompt("Ingrese el nombre de la persona que va a al tour");
  let edad = prompt ("ingrese la edad de la personas");
- const UnIntegrante = new IntegrantesTour(nombre, edad);
+ const UnIntegrante = new ingresoIntegrantesGrupo(nombre, edad);
 }
  grupoTour.push(UnIntegrante);
  console.log("la cantida de integrantes es de ",grupoTour.length);
