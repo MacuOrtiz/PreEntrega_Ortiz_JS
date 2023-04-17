@@ -10,16 +10,15 @@ const MAYOR_EDAD = 18
   class toursUrku {
     constructor (opciontour, precios) {
     this.opciontour = opciontour.toUpperCase();
-    this.precios = parseFloat(edad);
-    }
+     }
    }
   const toursUrkumountain = [
-  new toursUrku ("a) Volcan Cotopaxi "), 
-  new toursUrku ("b) Laguna Quilotoa "), 
-  new toursUrku ("c) Glaciar Volcan Cayambe "), 
-  new toursUrku ("d) Escuela de Glaciar del volcan Cayambe ") , 
-  new toursUrku ("e) Iinizas Sur "), 
-  new toursUrku ("f) Trekking en medias Montañas "),
+  new toursUrku ("1) Volcan Cotopaxi "), 
+  new toursUrku ("2) Laguna Quilotoa "), 
+  new toursUrku ("3) Glaciar Volcan Cayambe "), 
+  new toursUrku ("4) Escuela de Glaciar del volcan Cayambe ") , 
+  new toursUrku ("5) Iinizas Sur "), 
+  new toursUrku ("6) Trekking en medias Montañas "),
 ]
 
   toString = function(){
@@ -47,13 +46,13 @@ porCadaTour (tours, console.log)
 
 let tourEleguido = prompt(" Seleciona un numero por favor: " + tours.join(", "));
 
-// let tourBuscado = toursUrkumountain.find(eltour => eltour.opciontour.includes (tourEleguido.toUpperCase()) 
-// );
-//  if (tourEleguido !== undefined) {
-//   alert("el tour elegido es " + tourBuscado.toString())
-//    } else {
-//     alert("no encontramos el tour ingresado con el nombre: " + tourEleguido)
-//    }
+ let tourBuscado = toursUrkumountain.find(eltour => eltour.opciontour.includes (tourEleguido.toUpperCase()) 
+ );
+  if (tourEleguido !== undefined) {
+   alert("el tour elegido es " + tourBuscado.toString())
+    } else {
+     alert("no encontramos el tour ingresado con el nombre: " + tourEleguido)
+ }
 
 
 class IntegrantesTour {
