@@ -48,8 +48,9 @@ let tourEleguido = prompt(" Seleciona un numero por favor: " + tours.join(", "))
 
  let tourBuscado = toursUrkumountain.find(eltour => eltour.opciontour.includes (tourEleguido.toUpperCase()) 
  );
-  if (tourEleguido !== undefined) {
-   alert("el tour elegido es " + tourBuscado.toString())
+  
+ if (tourEleguido !== undefined) {
+   alert("el tour elegido es " + tourBuscado.opciontour)
     } else {
      alert("no encontramos el tour ingresado con el nombre: " + tourEleguido)
  }
