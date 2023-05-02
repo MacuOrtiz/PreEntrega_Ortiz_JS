@@ -85,36 +85,39 @@ this.opciontour = opciontour.toUpperCase();
 // obotón de guardar
 var btnGuardar = document.getElementById("btnGuardar");
 
-//  evento de clic al botón
+// agregar evento de clic al botón
 btnGuardar.addEventListener("click", function() {
-  // obtenemos los valores ingresados por el usuario
+  // obtener los valores ingresados por el usuario
   var nombre = document.getElementById("nombreIntegrante").value;
   var edad = document.getElementById("edadIntegrante").value;
-  
-if(edad<18) {
-  alert ("te recuerdo que deber ser mayor de edad para realizar una actividad con nostros, por favor registra a una persona mayor de edad")
-}
 
-//json//
-var integrante = {
-  nombre: nombre,
-  edad: edad
-};
-var integranteJSON = JSON.stringify(integrante);
-localStorage, setItem ("integrante", integranteJSON)
-//fin json//
+  // validar la edad
+  if (edad < 18) {
+    alert("Debes ser mayor de edad para realizar una actividad con nosotros. Por favor, registra a una persona mayor de edad.");
+    return;
+  }
 
-  //agregamos el nombre y edad
+  // crear objeto 
+  var integrante = {
+    nombre: nombre,
+    edad: edad
+  };
+
+  // convertir objeto a cadena JSON
+  var integranteJSON = JSON.stringify(integrante);
+
+  // guardar  localStorage
+  localStorage.setItem("integrante", integranteJSON);
+
+  // agregar el nombre y la edad a la lista 
   var li = document.createElement("li");
   li.textContent = nombre + " - " + edad;
-
-  // obtenemos lista de integrantes y agregamos el nuevo elemento
   var listaIntegrantes = document.getElementById("listaIntegrantes");
   listaIntegrantes.appendChild(li);
-//limpiar los inputs//
-document.getElementById("nombreIntegrante").value = "";
-document.getElementById("edadIntegrante").value = "";
 
+  // limpiar los inputs
+  document.getElementById("nombreIntegrante").value = "";
+  document.getElementById("edadIntegrante").value = "";
 });
 
 
