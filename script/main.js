@@ -2,6 +2,7 @@
 console.log("hola Bienvenido a Urku Extreme Mountain Tours");
 console.log("es el body", document.body)
 console.log("es el head", document.head)
+
 let Tour = document.getElementsByClassName("nombretour");
 console.log ("los tours que se ofrecen son", Tour);
 for (const uniTour of Tour) {
