@@ -26,7 +26,7 @@ const toursUrkumountain = [
 
 function obtenerTours() {
   return new Promise((resolve, reject) => {
-    fetch("https://jsonplaceholder.typicode.com/tours")
+    fetch("../pages/tours.json")
       .then((response) => response.json())
       .then((toursData) => {
         const toursUrkumountain = toursData.map(
