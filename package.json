@@ -15,5 +15,8 @@
     "tour"
   ],
   "author": "Maria Ortiz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yup": "^1.1.1"
+  }
 }
